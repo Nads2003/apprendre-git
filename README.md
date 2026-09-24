@@ -78,7 +78,7 @@ Outil installé sur ton ordinateur
 GitHub
 ↓
 Plateforme en ligne utilisant Git
-
+```
 ---
  
 # 2 . Installation
