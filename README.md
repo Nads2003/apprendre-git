@@ -78,3 +78,14 @@ Outil installé sur ton ordinateur
 GitHub
 ↓
 Plateforme en ligne utilisant Git
+
+---
+ 
+# 2 . Installation
+
+## Ubuntu/Debian
+- sudo apt update
+- sudo apt install git
+
+### verifier
+- git --version
