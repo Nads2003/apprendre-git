@@ -108,3 +108,32 @@ Plateforme en ligne utilisant Git
 ##### Configurer l'editeur
  Exemple avec VS Code
   git config --global core.editor "code --wait"
+
+# 4. Creer un repository
+
+## Créer un dossier
+ mkdir nom-projet
+
+### Entrer dans le dossier
+ cd nom-projet
+
+#### Initialiser Git
+ git init
+
+ ```text
+ Git crée: .git/
+ .git contient les information du repository.
+ ```
+# 5. Comprendre les zones de Git
+ ```text
+ Git possède principalement trois zones :
+ Working Directory(Ce sont les fichiers que tu modifies.)
+       │
+       │ git add
+       ↓
+ Staging Area (Zone dans laquelle tu sélectionnes   les modifications qui seront enregistrées.)
+       │
+       │ git commit
+       ↓
+ Repository(Historique des commits.) ```
+
