@@ -141,7 +141,7 @@ Plateforme en ligne utilisant Git
  ```
  Git crée: .git/
  .git contient les information du repository.
- 
+
 # 5. Comprendre les zones de Git
  ```text
  Git possède principalement trois zones :
@@ -153,5 +153,45 @@ Plateforme en ligne utilisant Git
        │
        │ git commit
        ↓
- Repository(Historique des commits.) ```
+ Repository(Historique des commits.) 
+ ```
+
+# 6. Git status
+## commande essentielle
+ ```text
+ git status
+ ```
+### Elle permet de connaitre:
+ - les fichierq modifiés;
+ - les fichiers non suivis;
+ - les fichiers dans le staging;
+ - la branche actuelle;
+ - les commit à envoyer
+
+#### Exemple :
+ modifeid: src/app.jsx
+
+# 7. Git add
+## Ajouter un fichier :
+ ```text
+ git add README.md
+  ```
+### Ajouter plusieurs fichiers :
+ ```text
+ git add fichier1.js fichier2.js
+  ```
+#### Ajouter tous les fichiers :
+ ```tzxt
+ git add .
+  ```
+#### Ajouter tous les fichiers modifiés et supprimés
+ ```text
+ git add -A
+  ```
+##### Vérifier
+ ```text
+ git status
+  ```
+
+
 
