@@ -81,11 +81,30 @@ Plateforme en ligne utilisant Git
 ```
 ---
  
-# 2 . Installation
+# 2. Installation
 
 ## Ubuntu/Debian
 - sudo apt update
 - sudo apt install git
 
-### verifier
+### Verifier
 - git --version
+
+# 3. Configuration
+
+## Configurer le nom
+ git config --global user.name "Ton Nom"
+
+### Configurer l'email
+ git config --global user.email "test@email.com"
+
+#### Verifier
+ git config --global --list
+
+##### Voir une configuration précise
+ git config --global user.name
+ git config --global user.email
+
+##### Configurer l'editeur
+ Exemple avec VS Code
+  git config --global core.editor "code --wait"
