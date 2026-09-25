@@ -84,46 +84,64 @@ Plateforme en ligne utilisant Git
 # 2. Installation
 
 ## Ubuntu/Debian
-- sudo apt update
-- sudo apt install git
+ ```text
+ sudo apt update
+ sudo apt install git
+ ```
 
 ### Verifier
-- git --version
+ ```text
+ git --version 
+ ```
 
 # 3. Configuration
 
 ## Configurer le nom
- git config --global user.name "Ton Nom"
+ ```text
+  git config --global user.name "Ton Nom" 
+  ```
 
 ### Configurer l'email
- git config --global user.email "test@email.com"
+ ```text
+ git config --global user.email "test@email.com" 
+ ```
 
 #### Verifier
- git config --global --list
+ ```text
+  git config --global --list
+ ```
 
 ##### Voir une configuration précise
- git config --global user.name
- git config --global user.email
+ ```text
+    git config --global user.name
+    git config --global user.email
+```
 
 ##### Configurer l'editeur
  Exemple avec VS Code
+  ```text 
   git config --global core.editor "code --wait"
+  ```
 
 # 4. Creer un repository
 
 ## Créer un dossier
+```text
  mkdir nom-projet
+ ```
 
 ### Entrer dans le dossier
+```text
  cd nom-projet
+ ```
 
 #### Initialiser Git
+```text
  git init
-
- ```text
+ ```
  Git crée: .git/
  .git contient les information du repository.
- ```
+ 
 # 5. Comprendre les zones de Git
  ```text
  Git possède principalement trois zones :
