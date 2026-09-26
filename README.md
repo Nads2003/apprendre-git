@@ -192,6 +192,43 @@ Plateforme en ligne utilisant Git
  ```text
  git status
   ```
+# 8. Git commit
+## Créer un commit
+ ```text
+ git status
+  ```
+-Exemple :
+ ```text
+git commit -m "feat: add authentication"
+ ```
+ Un commit représente une version enregistrée du projet.
 
+### Voir le dernier commit
 
+ ```text
+ git show
+  ```
+#### Commit avec ajout automatique des fichiers déjà suivis
+ ```text
+ git commit -am "fix: update login"
+  ```
+  Cette commande ne prend pas les nouveaux fichiers non suivis.
+
+# 9 Git log
+## Voir l'historique
+```text
+git log
+```
+- Version courte :
+```text
+git log --oneline
+```
+- Avec les branches :
+```text
+git log --oneline --graph --all
+```
+- Version très pratique :
+```text
+git log --oneline --graph --decorate --all
+```
 
