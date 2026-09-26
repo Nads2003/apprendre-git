@@ -232,3 +232,27 @@ git log --oneline --graph --all
 git log --oneline --graph --decorate --all
 ```
 
+# 10 Git diff
+## Voir les modifications non ajoutées
+```text
+git diff
+```
+### Voir les modifications dans le staging :
+```text
+git diff --staged
+```
+#### Comparer deux commits
+```text
+git diff commit1 commit2
+```
+
+# 11 Git restore 
+## Annuler les modification d'un fichier
+```text
+git restore fichier.txt
+```
+### Retirer un fichier du staging
+```text
+git restore --staged fichier.txt
+```
+git restore fichier.txt peut supprimer les modifications locales non sauvegardées.
