@@ -256,3 +256,44 @@ git restore fichier.txt
 git restore --staged fichier.txt
 ```
 git restore fichier.txt peut supprimer les modifications locales non sauvegardées.
+
+# 12 .gitignore
+.gitignore permet d'empecher Git de suivre certains fichiers
+## Exemple :
+```text
+node_modules/
+.env
+dist/
+build/
+*.log
+.vscode/
+```
+## Pour un projet React :
+```
+node_modules/
+dist/
+.env
+```
+### Pour Spring Boot :
+```text
+target/
+.env
+```
+#### Pour Python :
+```
+__pycache__/
+*.pyc
+.venv/
+.env
+```
+Ne jamais envoyer des mots de passe, clés API ou secrets sur GitHub.
+
+# 13 Branches
+## Voir les branches
+```text
+git branch
+```
+### Créer une branche
+```text
+git branch feature/login
+```
