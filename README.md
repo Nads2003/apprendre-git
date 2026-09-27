@@ -156,7 +156,7 @@ Plateforme en ligne utilisant Git
  Repository(Historique des commits.) 
  ```
 
-# 6. Git status
+# 6. git status
 ## commande essentielle
  ```text
  git status
@@ -171,7 +171,7 @@ Plateforme en ligne utilisant Git
 #### Exemple :
  modifeid: src/app.jsx
 
-# 7. Git add
+# 7. git add
 ## Ajouter un fichier :
  ```text
  git add README.md
@@ -192,7 +192,7 @@ Plateforme en ligne utilisant Git
  ```text
  git status
   ```
-# 8. Git commit
+# 8. git commit
 ## Créer un commit
  ```text
  git status
@@ -214,7 +214,7 @@ git commit -m "feat: add authentication"
   ```
   Cette commande ne prend pas les nouveaux fichiers non suivis.
 
-# 9 Git log
+# 9 git log
 ## Voir l'historique
 ```text
 git log
@@ -232,7 +232,7 @@ git log --oneline --graph --all
 git log --oneline --graph --decorate --all
 ```
 
-# 10 Git diff
+# 10 git diff
 ## Voir les modifications non ajoutées
 ```text
 git diff
@@ -361,3 +361,37 @@ git remote set-url origin URL
 ```text
 git remote remove origin
 ```
+
+# 18. git clone
+## Cloner un repository Github :
+```text
+git clone https://github.com/USERNAME/REPOSITORY.git
+```
+### Cloner dans un dossier particulier :
+```text 
+git clone URL mon-projet
+```
+Puis
+```text
+cd mon-projet
+```
+
+# 19. git push
+## Envoyer les commits vers GitHub
+```text 
+git push
+```
+### Lors du premier push :
+```text
+git push -u origin main
+```
+Ensuite 
+```text
+git push
+```
+#### Envoyer une branche
+```text
+git push origin feature/login
+```
+
+
