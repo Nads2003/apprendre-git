@@ -321,3 +321,43 @@ Puis :
 ```text
 git merge feature/login
 ```
+# 16.  git rebase
+## Mettre à jour une branche avec les dernière modification de main:
+```text
+git switch feature/login
+git rebase main
+```
+### Conceptuellement :
+```text
+Avant :
+
+A---B---C main
+     \
+      D---E feature
+Après :
+
+A---B---C---D---E
+```
+Évite le rebase sur des commits déjà partagés avec une équipe sans comprendre ses conséquences.
+
+# 17 git remote
+## Voir les repositories distants
+```text
+git remote -v
+```
+### Ajouter Github
+```text
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+```
+#### Voir les details :
+```text
+git remote show origin
+```
+##### Changer l'URL :
+```text
+git remote set-url origin URL
+```
+###### Supprimer un remote
+```text
+git remote remove origin
+```
