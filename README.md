@@ -288,7 +288,7 @@ __pycache__/
 ```
 Ne jamais envoyer des mots de passe, clés API ou secrets sur GitHub.
 
-# 13 Branches
+# 13. Branches
 ## Voir les branches
 ```text
 git branch
@@ -296,4 +296,28 @@ git branch
 ### Créer une branche
 ```text
 git branch feature/login
+```
+# 14. git switch
+## Changer de branche :
+```text
+git switch feature/login
+```
+### Créer et changer directement
+```text
+git switch -c feature/login
+```
+# 15. git merge
+- Supposons
+```text
+  main
+ │
+ └── feature/login
+ ```
+Une fois le développement terminé
+ ```text
+  git switch 
+  ```
+Puis :
+```text
+git merge feature/login
 ```
