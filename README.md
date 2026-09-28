@@ -429,4 +429,49 @@ git pull
 ↓
 fetch + intégration
 ```
+# 22. Pull Request
+Une Pull Request permet de proposer des modification avant de les intégrer à une branche
 
+## Workflow
+```text
+feature/login
+      ↓
+git push
+      ↓
+GitHub
+      ↓
+Pull Request
+      ↓
+Code Review
+      ↓
+Merge
+      ↓
+main
+```
+### Une PR peut contenir :
+- description;
+- coommits;
+- modifications;
+- commentaires;
+- reviewers;
+- test;
+- validation
+
+# 23. Issues
+Une Issue permet d suivre une tache ou un problème.
+Exemple :
+```text 
+Issue #15
+
+Titre :
+Corriger le formulaire de connexion
+
+Description :
+Le formulaire accepte un mot de passe vide.
+```
+
+Une équipe put ensuite créer :
+```text
+feature/fix-login
+```
+pour resoudre le problème.
