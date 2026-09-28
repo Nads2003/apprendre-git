@@ -393,5 +393,40 @@ git push
 ```text
 git push origin feature/login
 ```
+# 20. git pull
+## Récupérer les modifications de Github et les intégrer
+```text
+git pull
+```
+Avec une branche
+```text
+git pull origin main
+```
+### Conceptuellement
+```text
+GitHub
+   ↓
+git pull
+   ↓
+Repository local
+```
+# 21. git fetch
+## Récupérer les informations du remote sans modifier directement ton travail
+```text
+git fetch
+```
+Toutes les branches:
+```text
+git fetch --all
+```
+### Différence importante :
+```text
+git fetch
+↓
+récupère les nouveautés
 
+git pull
+↓
+fetch + intégration
+```
 
