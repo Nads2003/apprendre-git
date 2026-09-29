@@ -475,3 +475,43 @@ Une équipe put ensuite créer :
 feature/fix-login
 ```
 pour resoudre le problème.
+
+# 24. Fork
+Un fork une copie d'un repository sur ton propre compte GitHub.
+Utile notamment pour contribuer à un projet auquel tu n'as pas directement accès
+## Workflow
+```text
+Repository original
+        ↓
+      Fork
+        ↓
+Ton repository
+        ↓
+Feature
+        ↓
+Pull Request
+        ↓
+Repository original
+```
+# 25. git stash
+## Mettre temporairement de coté les modifications :
+```text
+git stash
+```
+### Voir les stash :
+```text
+git stash list
+```
+#### Appliquer sans supprimer :
+```text
+git stash apply
+```
+##### Supprimer un stash :
+```text
+git stash drop
+```
+###### Tout supprimer
+```text
+git stash clear
+```
+
