@@ -514,4 +514,29 @@ git stash drop
 ```text
 git stash clear
 ```
+# 25. git reset
 
+## Soft
+```text
+git reset --soft HEAD~1
+```
+Le commit est supprimé mais les modifications restent dan le staging
+
+### Mixed
+```text
+git reset HEAD~1
+```
+Le commit est supprimé et les modifications restent dans le working directory
+
+#### Hard 
+```text
+git reset --hard HEAD~1
+```
+Peut supprimer les modifications locales
+
+# 27. git revert
+Annuler un commit en créant un nouveau commit :
+```text 
+git commit COMMIT_ID
+```
+C'est généralement préférable à reset lorsqu'un commit a déjà été partagé avec l'équipe
