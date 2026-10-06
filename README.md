@@ -540,3 +540,132 @@ Annuler un commit en créant un nouveau commit :
 git commit COMMIT_ID
 ```
 C'est généralement préférable à reset lorsqu'un commit a déjà été partagé avec l'équipe
+
+# 28. git cherry-pick
+Prendre un commit particulier et l'appliquer sur la branche actuelle
+```text
+git cherry-pick COMMIT_ID
+```
+## Exemple
+```text
+main
+A---B---C
+
+feature
+A---B---C---D---E
+```
+On peut récupérer D
+```text
+git cherry-pick D
+```
+
+# 29. git reflog
+Voir les mouvement récent de HEAD
+```text
+git reflog
+```
+Très utile pour récupérer un commit après une erreur
+## Exemple :
+```text
+HEAD@{0}
+HEAD@{1}
+HEAD@{2}
+```
+Puis éventuellement
+```text 
+git reset --hard COMMIT_ID
+```
+A utiliser avec précaution
+
+# 30 Résoudre un conflit
+
+- Example :
+```text
+git merge feature/login
+```
+- Git indique :
+```text
+CONFLICT
+```
+- Le fichier peut contenir :
+```text
+<<<<<<< HEAD
+code de main
+=======
+code de feature
+>>>>>>> feature/login
+```
+On doit choisir ou combiner les deux versions.
+- Puis
+```text
+git add fichier
+```
+- Et
+```text
+git commit
+```
+Pour un conflit pendant un rebase :
+```trxt
+git add fichier
+git rebase --continue
+```
+- Annuler le rebase
+```text
+git rebase --abort
+```
+- Annuler le merge
+```text
+git merge --abort
+```
+# 31 SSH avec Github
+## Créer une clé SSH :
+```text
+ssh-keygen -t ed25519 -C "ton-mail@example.com"
+```
+- Demarrer l'agent
+```text
+eval "$(ssh-agent -s)"
+```
+### Ajouter la clé
+```text 
+ssh-add ~/.ssh/id_ed25519
+```
+#### Affiche la clé publique :
+```text
+cat ~/.ssh/id_ed25519.pub
+```
+##### Copier cette clé dans GitHub
+Tester :
+```text
+ssh -T git@github.com
+```
+###### Utiliser ensuite une URL SSH :
+```text
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git"
+```
+
+# 32. Tags
+## Créer un tag :
+```text
+git tag v1.0.0
+```
+### Tag annoté:
+```text
+git tag -a v1.0.0 -m "Version 1.0.0"
+```
+#### Voir les tags:
+```text
+git tag
+```
+##### Envoyer un tag:
+```text
+git push origin v1.0.0
+```
+###### Envoyer tous les tags
+```text 
+git push --tags
+```
+
+
+
+
