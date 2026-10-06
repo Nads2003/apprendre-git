@@ -540,3 +540,39 @@ Annuler un commit en créant un nouveau commit :
 git commit COMMIT_ID
 ```
 C'est généralement préférable à reset lorsqu'un commit a déjà été partagé avec l'équipe
+
+# 28. git cherry-pick
+Prendre un commit particulier et l'appliquer sur la branche actuelle
+```text
+git cherry-pick COMMIT_ID
+```
+## Exemple
+```text
+main
+A---B---C
+
+feature
+A---B---C---D---E
+```
+On peut récupérer D
+```text
+git cherry-pick D
+```
+
+# 29. git reflog
+Voir les mouvement récent de HEAD
+```text
+git reflog
+```
+Très utile pour récupérer un commit après une erreur
+## Exemple :
+```text
+HEAD@{0}
+HEAD@{1}
+HEAD@{2}
+```
+Puis éventuellement
+```text 
+git reset --hard COMMIT_ID
+```
+
